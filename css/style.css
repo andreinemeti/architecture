@@ -114,7 +114,7 @@ span {
     display: none;
 }
 .nav.expand {
-    width: 100%;
+    width: 40%;
     opacity: .98;
 }
 .nav.expand a {
