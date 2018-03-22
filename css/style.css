@@ -73,6 +73,7 @@ span {
     text-align: center;
     vertical-align: center;
     line-height: 100px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
 }
 #slogan h1 {
     font-family: 'Open Sans', sans-serif;
@@ -141,6 +142,7 @@ button {
     max-width: 10rem;
     width: 100%;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
 
 }
 
@@ -273,6 +275,11 @@ hr {
     width: 60%;
     margin: 0 auto 10px auto;
     font-size: 1.3rem;
+}
+
+#work a:last-child {
+    position: relative;
+    z-index: 1;
 }
 .example {
     display: inline-flex;
