@@ -1,217 +1,273 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="ANDREI NEMETI PORTOFOLIO">
-      <meta name="keywords" content="HTML PORTOFOLIO">
-      <meta name="author" content="Andrei Nemeti">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!--[if lt IE 9]>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-      <![endif]-->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" type="text/css" href="css/normalize.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <title>Andrei Nemeti | Architecture Website</title>
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="ANDREI NEMETI PORTOFOLIO" />
+    <meta name="keywords" content="HTML PORTOFOLIO" />
+    <meta name="author" content="Andrei Nemeti" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   </head>
-   <body>
-   <!--[if lte IE 9]>
-   <div class="browser-upgrade">
-      <p class="browser-upgrade__text">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-   </div>
-   <![endif]-->
-   <!-- <div id="contact-us-now">
-      <h3>Send us a message!</h3>
-      </div> -->
-   <!--  ***************** START SIDE NAVIGATION ***************** -->
-   <div class="nav" id="nav">
-      <a href="#" class="icon" onclick="responsiveNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-      <a href="#" class="iconx" onclick="responsiveNav()"><i class="fa fa-times" aria-hidden="true"></i></a> 
-      <a href="#nav">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>   
-   </div>
-   <!--  ***************** END SIDE NAVIGATION ***************** -->
-   <!--  ***************** START LANDING PAGE  ***************** -->
-   <div class="landing-page">
-      <div id="logo">
-         <img src="img/logo.png" height="50px">
-         <h1>NEXT </h1>
-         <span>solutions</span>
+    <!--[if lt IE 9]>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
+      ></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
+
+    <title>Andrei Nemeti | Architecture Website</title>
+
+    <style>
+   
+    </style>
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <div class="browser-upgrade">
+        <p class="browser-upgrade__text">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+          your experience and security.
+        </p>
       </div>
-      <div id="slogan">
-         <h1>We build dream houses.</h1>
+    <![endif]-->
+
+    <!-- ====================== Side Navigation ====================== -->
+    <nav class="side-nav" id="sideNav">
+      <a href="#" class="side-nav__toggle side-nav__link" data-js="nav-open"
+        ><i class="fa fa-bars" aria-hidden="true"></i
+      ></a>
+      <a href="#" class="side-nav__toggle side-nav__toggle--close u-hidden side-nav__link" data-js="nav-close"
+        ><i class="fa fa-times" aria-hidden="true"></i
+      ></a>
+
+      <a href="#nav" class="side-nav__link">Home</a>
+      <a href="#about" class="side-nav__link">About</a>
+      <a href="#work" class="side-nav__link">Work</a>
+      <a href="#contact" class="side-nav__link">Contact</a>
+    </nav>
+
+    <!-- ====================== Landing ====================== -->
+    <header class="landing" id="nav">
+      <div class="landing__logo">
+        <img src="img/logo.png" height="50" alt="Next Solutions logo" class="landing__logo-img" />
+        <h1 class="landing__logo-title">NEXT </h1>
+        <span class="landing__logo-subtitle">solutions</span>
       </div>
-   </div>
-   <!--  ***************** END LANDING PAGE  ***************** -->
-   <!--  ***************** START ABOUT SECTION  ***************** -->
-   <div id="about">
-    
-      <header>
-         <h1>About</h1>
+      <div class="landing__slogan">
+        <h1 class="landing__slogan-text">We build dream houses.</h1>
+      </div>
+    </header>
+
+    <!-- ====================== About ====================== -->
+    <section class="about" id="about">
+      <header class="section__header about__header">
+        <h1 class="section__header-title">About</h1>
       </header>
-  
-      <section class="our-story">
-      <br/>
-         <img src="img/img1.jpg">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.  <br/>Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-         </p>
-         <a href="#our-story"><button>Find out more!</button></a>
+
+      <section class="about__story" id="our-story">
+        <br />
+        <img src="img/img1.jpg" alt="Our story" class="about__img" />
+        <p class="about__text">
+          <strong>NEXT solutions is a boutique architecture and construction studio. </strong><br/><br/>
+          We partner with homeowners and developers to plan, design, and deliver thoughtful, efficient spaces that feel effortless to live in. 
+          From the first sketch to the final handover, our team manages every detail—on schedule, on budget, and with craftsmanship that lasts.
+        </p>
+        <a href="#our-story" class="about__cta"><button class="btn">Find out more!</button></a>
       </section>
-      <br/>
-      <hr/>
-      <br/>
-      <section class="services">
-         <h1>Services</h1>
-         <br/>
-         <img src="img/img-services.png">
-         <p>We offer impeccable services. <br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,n voluptate velit esse:
-         </p>
-         <ul>
-            <li>Engineering &amp; Design</li>
-            <li>Budgeting</li>
-            <li>Municipal approvals</li>
-            <li>Analytics and search</li>
-            <li>Other stuff that construction companies offer</li>
-         </ul>
-         <a href="" target="_blank"><button>See the complete list of services</button></a>
-      </section>
-   </div>
-   <!--  ***************** END ABOUT SECTION  ***************** -->
-   <!--  ***************** START WORK  ***************** -->
-   <div id="work">
-      <br/>
-      <header>
-         <h1>Work</h1>
-      </header>
-      <br/><br/><br/>
-      <p>We have built amazing homes for clients all over the world. Being able to relocate our team in less than 48 hours, we can begin working on your dream home in no time.
-      </p>
-      <div class="example-list">
-      <div class="example">
-         <figure class="info-hover">
-            <img src="img/house1.jpg">
-            <figcaption>
-               <h4>CALIFORNIA</h4>
-               <h4>Budget:< 500K</h4>
-               <h2>More about this project.</h2>
-            </figcaption>
-            <a href="#sdadadasa"></a>
-         </figure>
-      </div>
-  
-      <div class="example">
-         <figure class="info-hover">
-            <img src="img/house2.jpg">
-            <figcaption>
-               <h4>ROME</h4>
-               <h4>Budget:< 500K</h4>
-               <h2>More about this project.</h2>
-            </figcaption>
-            <a href="#sadsadsada"></a>
-         </figure>
-      </div>
-      <div class="example">
-         <figure class="info-hover">
-            <img src="img/house3.jpg
-               ">
-            <figcaption>
-               <h4>LONDON</h4>
-               <h4>Budget:< 750K</h4>
-               <h2>More about this project.</h2>
-            </figcaption>
-            <a href="#sadasdadsa"></a>
-         </figure>
-      </div>
-      <div class="example">
-         <figure class="info-hover">
-            <img src="img/house4.jpg">
-            <figcaption>
-               <h4>MANCHESTER</h4>
-               <h4>Budget:< 400K</h4>
-               <h2>More about this project.</h2>
-            </figcaption>
-            <a href="#asdadadsadsa"></a>
-         </figure>
-      </div>
-      </div>
-      <a href="#our-story"><button>View the complete portfolio</button></a>
-   </div>
-   <!--  ***************** END WORK   ***************** -->
-   <div id="contact">
-      <header>
-         <h1>Contact</h1>
-      </header>
-      <div id="info">
-         <p>London Street 35-37</p>
-         <p>UK, London</p>
-         <p>Tel: +00931156125</p>
-         <p>E-mail: public@nextsolutions.com</p>
-         <h4>Careers</h4>
-         <h5> If you are interested in a career at our company, please forward your CV and cover letter to careers@nextsolutions.com</h5>
-         <div id="social">
-            <p>Follow us!</p>
-            <a href="#contact" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#contact" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#contact" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-            <hr/>
+
+      <br />
+      <hr class="about__divider" />
+      <br />
+
+      <section id="services">
+         <header class="section__header work__header">
+            <h1 class="section__header-title">Services</h1>
+         </header>
+        <br />
+         <div class="about__services">
+             <img src="img/img-services.png" alt="Services" class="about__services-img" />
+        <p class="about__services-text">
+          From feasibility to finishing touches, our team handles the full journey. Here’s a glimpse of what we do:
+        </p>
+        <ul class="about__services-list">
+          <li>Engineering &amp; Design</li>
+          <li>Budgeting</li>
+          <li>Municipal approvals</li>
+          <li>Analytics and search</li>
+          <li>Other stuff that construction companies offer</li>
+        </ul>
+        <a href="" target="_blank" class="about__services-link"><button class="btn">Explore all services</button></a>
          </div>
+      </section>
+    </section>
+
+    <!-- ====================== Work ====================== -->
+    <section class="work" id="work">
+      <br />
+      <header class="section__header work__header">
+        <h1 class="section__header-title">Work</h1>
+      </header>
+      <br /><br /><br />
+      <p class="work__intro">
+        We craft bespoke homes across the globe. With a mobilized team ready in under 48 hours, we begin turning your vision into reality—fast.
+      </p>
+
+      <div class="work__grid">
+        <article class="project-card">
+          <figure class="info-hover">
+            <img src="img/house1.jpg" alt="California House" class="project-card__img" />
+            <figcaption class="info-hover__caption">
+              <h4>CALIFORNIA</h4>
+              <h4>Budget:&lt; 500K</h4>
+              <h2 class="info-hover__headline">More about this project.</h2>
+            </figcaption>
+            <a href="#sdadadasa" class="info-hover__link" aria-label="More about California project"></a>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure class="info-hover">
+            <img src="img/house2.jpg" alt="Rome House" class="project-card__img" />
+            <figcaption class="info-hover__caption">
+              <h4>ROME</h4>
+              <h4>Budget:&lt; 500K</h4>
+              <h2 class="info-hover__headline">More about this project.</h2>
+            </figcaption>
+            <a href="#sadsadsada" class="info-hover__link" aria-label="More about Rome project"></a>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure class="info-hover">
+            <img src="img/house3.jpg" alt="London House" class="project-card__img" />
+            <figcaption class="info-hover__caption">
+              <h4>LONDON</h4>
+              <h4>Budget:&lt; 750K</h4>
+              <h2 class="info-hover__headline">More about this project.</h2>
+            </figcaption>
+            <a href="#sadasdadsa" class="info-hover__link" aria-label="More about London project"></a>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure class="info-hover">
+            <img src="img/house4.jpg" alt="Manchester House" class="project-card__img" />
+            <figcaption class="info-hover__caption">
+              <h4>MANCHESTER</h4>
+              <h4>Budget:&lt; 400K</h4>
+              <h2 class="info-hover__headline">More about this project.</h2>
+            </figcaption>
+            <a href="#" class="info-hover__link" aria-label="More about Manchester project"></a>
+          </figure>
+        </article>
       </div>
-      <br/>
-      <div id="map"></div>
-      <br/>
-   </div>
-   <script>      
-      $(document).ready(function(){
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
+
+      <a href="#our-story" class="work__cta"><button class="btn">View the complete portfolio</button></a>
+    </section>
+
+    <!-- ====================== Contact ====================== -->
+    <section class="contact" id="contact">
+      <header class="section__header contact__header">
+        <h1 class="section__header-title contact__title">Contact</h1>
+      </header>
+
+      <div class="contact__wrap">
+        <div class="contact__info">
+          <p class="contact__address">London Street 35-37</p>
+          <p class="contact__address">UK, London</p>
+          <p class="contact__address">Tel: +00931156125</p>
+          <p class="contact__address">E-mail: public@nextsolutions.com</p>
+          <h4 class="contact__careers-title">Careers</h4>
+          <h5 class="contact__badge contact__badge--sub">
+            If you are interested in a career at our company, please forward your CV and cover letter to careers@nextsolutions.com
+          </h5>
+          <div class="contact__social">
+            <p>Follow us!</p>
+            <a href="#contact" target="_blank" class="contact__social-link"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#contact" target="_blank" class="contact__social-link"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="#contact" target="_blank" class="contact__social-link"
+              ><i class="fa fa-twitter-square" aria-hidden="true"></i
+            ></a>
+            <hr class="contact__separator" />
+          </div>
+        </div>
+
+        <div class="contact__map">
+          <div id="map" class="gmap" aria-label="Google Map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Scripts ====================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // Smooth in-page anchor scrolling
+      (function () {
+        $(document).on('click', 'a[href^="#"]', function (event) {
+          var hash = this.hash;
+          if (hash && $(hash).length) {
             event.preventDefault();
-            var hash = this.hash;
-      
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){  
+            $('html, body').animate({ scrollTop: $(hash).offset().top }, 800, function () {
               window.location.hash = hash;
             });
-          } 
+          }
         });
+      })();
+
+      
+      (function () {
+        var nav = document.getElementById('sideNav');
+        var openBtn = document.querySelector('[data-js="nav-open"]');
+        var closeBtn = document.querySelector('[data-js="nav-close"]');
+
+        function expand() {
+          nav.classList.add('side-nav--expanded');
+          openBtn.classList.add('u-hidden');
+          closeBtn.classList.remove('u-hidden');
+        }
+        function collapse() {
+          nav.classList.remove('side-nav--expanded');
+          closeBtn.classList.add('u-hidden');
+          openBtn.classList.remove('u-hidden');
+        }
+        openBtn.addEventListener('click', function (e) { 
+         e.preventDefault(); 
+         expand(); 
       });
-      
-               function responsiveNav() {
-                   var x = document.getElementById("nav");
-                   if (x.className === "nav") {
-                       x.className += " expand";
-                   } else {
-                       x.className = "nav";
-                   }
-               }
-      
-                 function initMap() {
-              var uluru = {lat: 51.515419, lng: 0.141099};
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 6,
-                center: uluru
-              });
-              var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-              });
-            }
-        
-   </script>
-   <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhGxcagueE0aztqwBj7Gw5o5UpkyLArd0&callback=initMap"></script>
-</body>
+        closeBtn.addEventListener('click', function (e) { 
+         e.preventDefault(); 
+         collapse(); 
+      });
+      })();
+
+      // Google Maps init
+      function initMap() {
+        var uluru = { lat: 51.515419, lng: 0.141099 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6,
+          center: uluru,
+        });
+        new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhGxcagueE0aztqwBj7Gw5o5UpkyLArd0&callback=initMap"
+    ></script>
+  </body>
 </html>
